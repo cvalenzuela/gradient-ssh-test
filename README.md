@@ -30,7 +30,7 @@ Once this job is running it will appear to stop at `processing triggers for syst
 You can now SSH to your job by getting the public IP address from the your console (https://www.paperspace.com/console/jobs) and then typing:
 
 ```
-ssh ssh root@104.196.249.111 -p 8888
+ssh root@104.196.249.111 -p 8888
 ```
 
 *Note: we are forwarding port `8888` to the container's SSH port `22` which you can see in the `--ports 8888:22` portion of the job run. This is because the host node cannot expose port `22` directly as it is reserved for internal communication. (TODO: make list of ports that cannot be used)*
